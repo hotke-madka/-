@@ -2,16 +2,13 @@ import tkinter as tk
 from tkinter import ttk, messagebox, Label,Entry,Button,filedialog,LabelFrame
 import csv
 from datetime import datetime
-#4/16時点　記録回りを修正。商品登録にenterキーバインドを追加
-#持ち出しリストの読み取り機能と名づけ機能を追加。ところで、[持ち出し]ってpickupの方が良くない？
+
 class Product:
     def __init__(self,name,category,price,stock):
         self.name=name
         self.category=category
         self.price= price
         self.stock = stock
-
-
 
 class InventoryApp:
 #全体設定    
